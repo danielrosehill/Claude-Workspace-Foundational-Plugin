@@ -35,7 +35,8 @@ Bucket the request into one of:
 - **Inventory / asset tracking** → `workspace-foundational` (inventory-analysis variant)
 - **Web analytics** → `workspace-foundational` (web-analytics variant)
 - **Career / job search / salary** → `career` plugin
-- **Purchasing / procurement** → `purchasing` plugin
+- **Purchasing / procurement — a decision between known options** → `purchasing` plugin (general-purchasing variant)
+- **Procurement research — "what's on the market that meets this spec?"** → `purchasing` plugin (market-landscape variant)
 - **Region-specific shopping** → `shopping` plugin
 - **Knowledge base / wiki / SOP** → `knowledge-documentation` plugin
 - **Content writing / blog / thinkpiece** → `content-writing` plugin
@@ -44,6 +45,17 @@ Bucket the request into one of:
 - **Generic ongoing workspace** → `workspace-foundational` (generic-workspace variant)
 
 If the request genuinely doesn't fit, say so and suggest the generic-workspace variant as a starting point.
+
+### 1b. Disambiguate decision vs survey
+
+Several clusters split along the same seam, and it's the commonest way this skill routes wrong. Ask which side the user is on whenever it isn't explicit:
+
+- **"Which of these should I get?"** — the options are known, the output is a pick. → `purchasing:general-purchasing`
+- **"What's even out there that does this?"** — the spec is known, the options aren't, the output is a map of the field and its gaps. → `purchasing:market-landscape`
+
+Signals for the survey side: the user states a requirement rather than a product; asks what the "lay of the land" is; doesn't know whether the thing exists; wants to know what's available *currently*; or says they're not buying yet. A survey can legitimately conclude "this doesn't exist" — if that outcome would be useful to them, they want the landscape variant.
+
+The same seam separates `research-space:ecosystem` (mapping a technology or vendor ecosystem for understanding) from `purchasing:market-landscape` (mapping a market against a buying spec, with conformance and price bands). If there's a spec with must-haves behind the question, it's the purchasing one.
 
 ### 2. Return a shortlist
 

@@ -1,7 +1,7 @@
 {
   "name": "workspace-foundational",
-  "version": "1.0.0",
-  "description": "Claude Code plugin: workspace foundational workflow — generic workspace scaffolds, context/memory maintenance, report parsing, inventory analysis, web analytics, and template discovery primitives, with generic/context-management/report-parsing/inventory/web-analytics/template-discovery variants.",
+  "version": "1.0.1",
+  "description": "Claude Code plugin: workspace foundational workflow \u2014 generic workspace scaffolds, context/memory maintenance, report parsing, inventory analysis, web analytics, and template discovery primitives, with generic/context-management/report-parsing/inventory/web-analytics/template-discovery variants.",
   "author": {
     "name": "Daniel Rosehill",
     "url": "https://github.com/danielrosehill"
