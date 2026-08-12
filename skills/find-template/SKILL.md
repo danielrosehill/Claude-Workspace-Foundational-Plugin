@@ -42,6 +42,11 @@ Bucket the request into one of:
 - **Content writing / blog / thinkpiece** → `content-writing` plugin
 - **Household / personal finance** → `personal-finance` plugin
 - **Filesystem organisation** → `filesystem-organiser` plugin
+- **Brainstorming / idea generation on a subject** → `ideation-planning` plugin (ideation-session variant)
+- **Deep evaluation of one idea** → `ideation-planning` plugin (single-idea-eval variant), or the `business-idea-eval` plugin when the idea is commercial
+- **Ranking or shortlisting many candidates** → `ideation-planning` plugin (multi-idea-ranking variant)
+- **Low-friction idea inbox** → `ideation-planning` plugin (idea-capture variant)
+- **Choosing between defined options** → `decision-evaluation-framework` plugin
 - **Generic ongoing workspace** → `workspace-foundational` (generic-workspace variant)
 
 If the request genuinely doesn't fit, say so and suggest the generic-workspace variant as a starting point.
