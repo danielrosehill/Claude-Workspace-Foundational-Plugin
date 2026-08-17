@@ -35,8 +35,9 @@ Bucket the request into one of:
 - **Inventory / asset tracking** → `workspace-foundational` (inventory-analysis variant)
 - **Web analytics** → `workspace-foundational` (web-analytics variant)
 - **Career / job search / salary** → `career` plugin
-- **Purchasing / procurement — a decision between known options** → `purchasing` plugin (general-purchasing variant)
-- **Procurement research — "what's on the market that meets this spec?"** → `purchasing` plugin (market-landscape variant)
+- **Purchasing / procurement — a decision between known options** → `procurement-tools` plugin (general-purchasing variant)
+- **Procurement research — "what's on the market that meets this spec?"** → `procurement-tools` plugin (market-landscape variant)
+- **"I don't know what this thing is called or what to search for"** → `procurement-tools` plugin, `define-spec` command (spec + annotated search vocabulary, accepts a photograph)
 - **Region-specific shopping** → `shopping` plugin
 - **Knowledge base / wiki / SOP** → `knowledge-documentation` plugin
 - **Content writing / blog / thinkpiece** → `content-writing` plugin
