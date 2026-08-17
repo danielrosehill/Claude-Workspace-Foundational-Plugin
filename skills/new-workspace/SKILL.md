@@ -14,7 +14,7 @@ Creates a new generic-purpose workspace. This plugin's commands (`/workspace-fou
 `$ARGUMENTS` is parsed as:
 
 - **First positional**: workspace name (kebab-case, used as directory and GitHub repo name). Required.
-- **Second positional** (optional): target parent path. Defaults to `~/repos/github/my-repos`.
+- **Second positional** (optional): target parent path. Defaults to the topic group under `~/repos/github/` that most specifically fits the subject — see `~/repos/github/README.md` for the group list. (`~/repos/github/my-repos/` is no longer the default; it holds only blog repos now.)
 - **`--variant=<name>`** (optional): which scaffold to copy. Default: `generic-workspace`. Valid values:
   - `generic-workspace`
   - `context-management`
